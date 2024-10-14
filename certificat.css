@@ -1,0 +1,44 @@
+section h4{
+    text-align: center;
+    background-color: rgb(66, 144, 207);
+    color: black;
+}
+*::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.slider-1{
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 4px solid rgb(66, 144, 207);
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.slider-1 .slider{
+    animation: slider-1 22s infinite ease-in-out;
+    display: flex;
+}
+.slider-1 img{
+    flex-shrink: 0;
+    padding: 0;
+    width: 100%;
+}
+@keyframes slider-1{
+    0%,25%{
+        transform: translateX(0);
+    }
+    25%,50%{
+        transform: translateX(-100%);
+    }
+    50%,75%{
+        transform: translateX(-200%);
+    }
+    75%,100%{
+        transform: translateX(-300%);
+    }
+    100%,0%{
+        transform: translateX(-400);
+    }
+}
