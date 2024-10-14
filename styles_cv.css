@@ -82,6 +82,9 @@ h2 {
 	border-radius: 0 50px 0 50px;
 	text-align: center;
 }
+p strong{
+	text-align: center;
+}
 div .left button{
 	font-size:16px; 
 	background-color:deepskyblue; 
